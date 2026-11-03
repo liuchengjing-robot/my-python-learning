@@ -1,0 +1,59 @@
+{
+  "variant": "walk",
+  "seconds": 20.0,
+  "ref_seconds": 10.0,
+  "cores": 14,
+  "pin": null,
+  "ref_before": 6460.997543604802,
+  "baseline": 6521.284179718091,
+  "rows": [
+    {
+      "procs": 1,
+      "env_steps_per_s": 6521.284179718091,
+      "per_proc": 6521.284179718091,
+      "per_proc_spread": 0.0,
+      "resets": 2781,
+      "speedup": 1.0,
+      "efficiency": 1.0,
+      "ref_after": 6224.672088646378,
+      "ref_drift": -0.036577239561457864
+    },
+    {
+      "procs": 2,
+      "env_steps_per_s": 12555.007202092484,
+      "per_proc": 6277.503601046242,
+      "per_proc_spread": 4.285953694499767,
+      "resets": 5357,
+      "speedup": 1.9252354070291757,
+      "efficiency": 0.9626177035145879,
+      "ref_after": 6353.939076519846,
+      "ref_drift": -0.016569959416084856
+    },
+    {
+      "procs": 4,
+      "env_steps_per_s": 21423.81457352885,
+      "per_proc": 5355.953643382212,
+      "per_proc_spread": 64.18945688572603,
+      "resets": 9146,
+      "speedup": 3.2852140748840943,
+      "efficiency": 0.8213035187210236,
+      "ref_after": 6149.301621464649,
+      "ref_drift": -0.048242693181128726
+    },
+    {
+      "procs": 8,
+      "env_steps_per_s": 28749.491724704614,
+      "per_proc": 3593.686465588077,
+      "per_proc_spread": 64.28002422236978,
+      "resets": 12263,
+      "speedup": 4.408562935214308,
+      "efficiency": 0.5510703669017885,
+      "ref_after": 6062.083338567543,
+      "ref_drift": -0.06174189083729187
+    }
+  ],
+  "worst_ref_drift": 0.06174189083729187,
+  "stable": true,
+  "gate": 5000.0,
+  "pass": true
+}

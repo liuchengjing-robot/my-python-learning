@@ -1,0 +1,24 @@
+# Upstream MJCF and meshes. Not committed: the 3D model files are CC BY-SA-NC
+# and this is a public repo. ./fetch_assets.sh reproduces the tree from a
+# pinned commit.
+assets/
+
+__pycache__/
+out/*
+!out/*.png
+runs/*
+!runs/*.json
+
+# scratch probes, not README numbers
+runs/bench.json
+runs/bench_quick.json
+runs/smoke*
+runs/ckpt*
+runs/*.pt
+!runs/policy_*.pt
+
+# the policy every step-3/step-5 number was measured on, and its export (under 1 MB each),
+# so eval_policy.py and export_onnx.py run from a clone; the resume checkpoint stays local
+!runs/ppo_*.pt
+runs/*.ckpt.pt
+!runs/policy_*.onnx
